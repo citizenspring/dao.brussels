@@ -5,17 +5,28 @@ import ErrorNotPublished from "../components/ErrorNotPublished";
 import RenderGoogleDoc from "../components/RenderGoogleDoc";
 
 const defaultValues = {
-  title: "Cryptoart Brussels",
+  title: "CryptoArt Brussels",
   description:
     "A place in the capital of Europe to bring local artist to the crypto world",
   image: "https://cryptoart.brussels/cryptoartbrussels-logo.webp",
 };
 
 const pages = {
-  about: { googleDocId: "1iT52-iZixBxFTsJjQo6SYAixaKtZIM5Gg3ZsAal6B4E" },
-  faq: { googleDocId: "1gEw7u-Fh3ZDhqy_qCzvyMKIHt7o9Ac584kcJQrEjceg" },
+  events: {
+    title: "CryptoArt Brussels - Events",
+    description:
+      "Join us to learn about crypto(art) and meet like minded people.",
+    googleDocId: "1H0n2eCaOIzR_cSVmbqUv03uewb5z0AYZB1dGF7b5G7o",
+  },
+  about: { googleDocId: "157PTpLzlBRSafb910POsk1b6CFNEBDqPCl8kzuKvycM" },
+  resources: {
+    title: "CryptoArt Brussels - resources",
+    description:
+      "Reading list, podcasts and other resources to learn about crypto(art)",
+    googleDocId: "1IWkopTJeulOHu1FEaj8xtbHoZrR1zZmbZQZAQOSwOlQ",
+  },
   collection: {
-    description: "NFT minted by the Cryptoart Brussels community",
+    description: "NFT minted by the CryptoArt Brussels community",
     googleDocId: "1bO1TO5MbWMNfYJqe0jP2ywetRPij8MTAFfTJevqG_Co",
   },
 };

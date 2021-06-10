@@ -24,7 +24,7 @@ export default class Home extends React.Component {
     return (
       <div className="w-full">
         <Head>
-          <title>Cryptoart Brussels</title>
+          <title>CryptoArt Brussels</title>
           <link rel="icon" href="/favicon.png" />
           <meta
             name="description"
