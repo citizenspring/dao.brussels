@@ -1,42 +1,19 @@
 import Head from "next/head";
 import { getHTMLFromGoogleDocId } from "../lib/googledoc";
+import { getPageMetadata } from "../lib/lib";
 import Footer from "../components/Footer";
 import ErrorNotPublished from "../components/ErrorNotPublished";
 import RenderGoogleDoc from "../components/RenderGoogleDoc";
+import sitemap from "../sitemap.json";
 
-const defaultValues = {
-  title: "CryptoArt Brussels",
-  description:
-    "A place in the capital of Europe to bring local artist to the crypto world",
-  image: "https://cryptoart.brussels/cryptoartbrussels-logo.webp",
-};
-
-const pages = {
-  events: {
-    title: "CryptoArt Brussels - Events",
-    description:
-      "Join us to learn about crypto(art) and meet like minded people.",
-    googleDocId: "1H0n2eCaOIzR_cSVmbqUv03uewb5z0AYZB1dGF7b5G7o",
-  },
-  about: { googleDocId: "157PTpLzlBRSafb910POsk1b6CFNEBDqPCl8kzuKvycM" },
-  resources: {
-    title: "CryptoArt Brussels - resources",
-    description:
-      "Reading list, podcasts and other resources to learn about crypto(art)",
-    googleDocId: "1IWkopTJeulOHu1FEaj8xtbHoZrR1zZmbZQZAQOSwOlQ",
-  },
-  collection: {
-    description: "NFT minted by the CryptoArt Brussels community",
-    googleDocId: "1bO1TO5MbWMNfYJqe0jP2ywetRPij8MTAFfTJevqG_Co",
-  },
-};
+const defaultValues = sitemap.index;
 
 export async function getStaticPaths() {
   const paths = [];
-  Object.keys(pages).forEach((key) => {
+  Object.keys(sitemap).forEach((key) => {
     paths.push({
       params: {
-        googleDocId: pages[key].googleDocId,
+        googleDocId: sitemap[key].googleDocId,
       },
     });
     paths.push({
@@ -52,21 +29,8 @@ export async function getStaticPaths() {
   };
 }
 
-function getPageInfo(param) {
-  let pageInfo = pages[param.toLowerCase()];
-  if (!pageInfo) {
-    // search by param
-    Object.keys(pages).forEach((key) => {
-      if (pages[key].googleDocId === param) {
-        pageInfo = pages[key];
-      }
-    });
-  }
-  return pageInfo || {};
-}
-
 export async function getStaticProps({ params }) {
-  const pageInfo = getPageInfo(params.googleDocId);
+  const pageInfo = getPageMetadata(params.googleDocId);
   const googleDocId = pageInfo.googleDocId || params.googleDocId;
   const doc = await getHTMLFromGoogleDocId(googleDocId);
 

@@ -4,9 +4,10 @@ import { getHTMLFromGoogleDocId } from "../lib/googledoc";
 import Footer from "../components/Footer";
 import ErrorNotPublished from "../components/ErrorNotPublished";
 import RenderGoogleDoc from "../components/RenderGoogleDoc";
+import sitemap from "../sitemap.json";
 
 export async function getStaticProps({ params }) {
-  const googleDocId = "1H6bAErQEJfu2y1rzgVhFtwyPAd1IeofX98uCRVJzdKY";
+  const googleDocId = sitemap.index.googleDocId;
   const page = await getHTMLFromGoogleDocId(googleDocId);
 
   return {
@@ -24,12 +25,9 @@ export default class Home extends React.Component {
     return (
       <div className="w-full">
         <Head>
-          <title>CryptoArt Brussels</title>
+          <title>{sitemap.index.title}</title>
           <link rel="icon" href="/favicon.png" />
-          <meta
-            name="description"
-            content="A place in the capital of Europe to bring local artist to the crypto world"
-          />
+          <meta name="description" content={sitemap.index.description} />
         </Head>
 
         <main className="max-w-screen-md px-4 mx-auto">
