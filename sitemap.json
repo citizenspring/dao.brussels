@@ -3,7 +3,7 @@
     "title": "CryptoArt Brussels",
     "description":
       "A place in the capital of Europe to bring local artist to the crypto world",
-    "image": "https://cryptoart.brussels/cryptoartbrussels-logo.webp",
+    "image": "https://cryptoart.brussels/cryptoartbrussels-logo.jpg",
     "googleDocId": "1H6bAErQEJfu2y1rzgVhFtwyPAd1IeofX98uCRVJzdKY"
   },
   "events": {
@@ -22,5 +22,11 @@
   "collection": {
     "description": "NFT minted by the CryptoArt Brussels community",
     "googleDocId": "1bO1TO5MbWMNfYJqe0jP2ywetRPij8MTAFfTJevqG_Co"
+  },
+  "place": {
+    "googleDocId": "1beOU1y0vktJzr5aQ8_JlPqqdIiuPZ0he9Giyy5g6FtE",
+    "title": "CryptoArt Corner - Brussels",
+    "description": "A place to meet, share and learn for the CryptoArt Brussels community",
+    "image": "https://cryptoart.brussels/cryptoartcornerbrussels.jpg"
   }
 }
