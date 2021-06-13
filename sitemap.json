@@ -28,5 +28,10 @@
     "title": "CryptoArt Corner - Brussels",
     "description": "A place to meet, share and learn for the CryptoArt Brussels community",
     "image": "https://cryptoart.brussels/cryptoartcornerbrussels.jpg"
+  },
+  "community": {
+    "googleDocId": "13gs-zJBZ0pSlwJ8LD6sP1AF6O08Za3M4a907JK9cXR4",
+    "title": "CryptoArt Brussels - Meet the community",
+    "description": "Meet the people that give life to the CryptoArt Brussels community."
   }
 }
