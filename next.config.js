@@ -43,7 +43,7 @@ module.exports = {
           },
         ],
         permanent: false,
-        destination: "https://t.me/joinchat/y2Ybneonmn4zZmVh",
+        destination: "https://t.me/joinchat/5NbP0-Vl5Vg3MTgx",
       },
     ];
   },
