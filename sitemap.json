@@ -1,37 +1,9 @@
 {
   "index": {
-    "title": "CryptoArt Brussels",
+    "title": "DAO Brussels",
     "description":
-      "A place in the capital of Europe to bring local artist to the crypto world",
-    "image": "https://cryptoart.brussels/cryptoartbrussels-logo.jpg",
-    "googleDocId": "1H6bAErQEJfu2y1rzgVhFtwyPAd1IeofX98uCRVJzdKY"
-  },
-  "events": {
-    "title": "CryptoArt Brussels - Events",
-    "description":
-      "Join us to learn about crypto(art) and meet like minded people.",
-    "googleDocId": "1H0n2eCaOIzR_cSVmbqUv03uewb5z0AYZB1dGF7b5G7o"
-  },
-  "about": { "googleDocId": "157PTpLzlBRSafb910POsk1b6CFNEBDqPCl8kzuKvycM" },
-  "resources": {
-    "title": "CryptoArt Brussels - resources",
-    "description":
-      "Reading list, podcasts and other resources to learn about crypto(art)",
-    "googleDocId": "1IWkopTJeulOHu1FEaj8xtbHoZrR1zZmbZQZAQOSwOlQ"
-  },
-  "collection": {
-    "description": "NFT minted by the CryptoArt Brussels community",
-    "googleDocId": "1bO1TO5MbWMNfYJqe0jP2ywetRPij8MTAFfTJevqG_Co"
-  },
-  "place": {
-    "googleDocId": "1beOU1y0vktJzr5aQ8_JlPqqdIiuPZ0he9Giyy5g6FtE",
-    "title": "CryptoArt Corner - Brussels",
-    "description": "A place to meet, share and learn for the CryptoArt Brussels community",
-    "image": "https://cryptoart.brussels/cryptoartcornerbrussels.jpg"
-  },
-  "community": {
-    "googleDocId": "13gs-zJBZ0pSlwJ8LD6sP1AF6O08Za3M4a907JK9cXR4",
-    "title": "CryptoArt Brussels - Meet the community",
-    "description": "Meet the people that give life to the CryptoArt Brussels community."
+      "The Genesis DAO for the Crypto Brussels Community",
+    "image": "https://dao.brussels/cryptoartbrussels-logo.jpg",
+    "googleDocId": "1_RcH-bZdOTicDFoPSn3Vw86WOc6RawRcMrHAcuaeVKU"
   }
 }

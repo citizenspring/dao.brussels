@@ -1,3 +1,8 @@
-This is the code for the cryptoart.brussels website
+This is the code for the dao.brussels website
 
-It uses [shared google docs](https://drive.google.com/drive/u/0/folders/10N_TlgG7xonuvjVIK8e0rhal8kBWc_GJ) to make it easy for anyone to contribute.
+It uses [shared google docs](https://drive.google.com/drive/folders/1w-97EnFUvXGJMuCNMOpgyCvu_6722oUf) to make it easy for anyone to contribute.
+
+## About DAO.brussels
+
+DAO.brussels is the genesis DAO for the crypto community in Brussels.
+Join us on Discord: https://discord.dao.brussels

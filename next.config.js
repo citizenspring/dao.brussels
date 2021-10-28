@@ -16,30 +16,30 @@ module.exports = {
         has: [
           {
             type: "host",
-            value: "drive.cryptoart.brussels",
+            value: "drive.dao.brussels",
           },
         ],
         permanent: false,
         destination:
-          "https://drive.google.com/drive/u/0/folders/1Cb7QcW9DBMGFEWm4RI7fm4yP0H9BBU95",
+          "https://drive.google.com/drive/folders/1r3kSwu8_w4ju0fn5TQOhg7HCQW2XwnmH",
       },
       {
         source: "/(.*)",
         has: [
           {
             type: "host",
-            value: "discord.cryptoart.brussels",
+            value: "discord.dao.brussels",
           },
         ],
         permanent: false,
-        destination: "https://discord.gg/aj6z88CRaK",
+        destination: "https://discord.gg/awfSTf6EHK",
       },
       {
         source: "/(.*)",
         has: [
           {
             type: "host",
-            value: "telegram.cryptoart.brussels",
+            value: "telegram.dao.brussels",
           },
         ],
         permanent: false,

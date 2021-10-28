@@ -1,11 +1,7 @@
 const Footer = ({ googleDocId }) => (
   <div className="footer text-sm mt-8 border-t border-gray-300 flex flex-row justify-between items-center w-screen max-w-screen-md mx-auto p-3">
     <div>
-      <a
-        href="https://cryptoart.brussels"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
+      <a href="https://dao.brussels" target="_blank" rel="noopener noreferrer">
         <img
           src="/cryptoartbrussels-icon.webp"
           alt="CryptoArt Brussels Logo"
