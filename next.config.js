@@ -39,6 +39,17 @@ module.exports = {
         has: [
           {
             type: "host",
+            value: "youtube.dao.brussels",
+          },
+        ],
+        permanent: false,
+        destination: "https://www.youtube.com/channel/UClgbKT6NhY2Au6xn_TquBYg",
+      },
+      {
+        source: "/(.*)",
+        has: [
+          {
+            type: "host",
             value: "telegram.dao.brussels",
           },
         ],
