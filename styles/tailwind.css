@@ -12,23 +12,32 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   line-height: 1.5;
   color: #111;
+  font-size: 11pt;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#outline .active {
+  color: red;
 }
 
 span {
   font-size: 11pt;
 }
 
-a,
-span a {
+.content a,
+.content span a {
   text-decoration: none !important;
   @apply no-underline text-green-700 !important;
 }
 
-a:hover {
+.content a:hover {
   @apply text-green-900;
 }
 
-a:visited {
+.content a:visited {
   @apply text-green-600;
 }
 
@@ -44,6 +53,14 @@ h3 {
 h3 {
   color: #333;
   @apply text-xl;
+}
+
+h4 {
+  @apply mt-6 mb-2;
+}
+
+h5 {
+  @apply mt-4 mb-1;
 }
 
 hr {

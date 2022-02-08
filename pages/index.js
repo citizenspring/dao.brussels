@@ -26,7 +26,7 @@ export default class Home extends React.Component {
       <div className="w-full">
         <Head>
           <title>{sitemap.index.title}</title>
-          <link rel="icon" href="/favicon.png" />
+          <link rel="icon" href={sitemap.index.favicon} />
           <meta name="description" content={sitemap.index.description} />
         </Head>
 
