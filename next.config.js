@@ -50,6 +50,18 @@ module.exports = {
         has: [
           {
             type: "host",
+            value: "calendar.dao.brussels",
+          },
+        ],
+        permanent: false,
+        destination:
+          "https://calendar.google.com/calendar/u/0?cid=aGFpam45amUwdTJjaTllZmo3ZzBpdDh0azRAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ",
+      },
+      {
+        source: "/(.*)",
+        has: [
+          {
+            type: "host",
             value: "telegram.dao.brussels",
           },
         ],
