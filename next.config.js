@@ -55,7 +55,7 @@ module.exports = {
         ],
         permanent: false,
         destination:
-          "https://calendar.google.com/calendar/u/0?cid=aGFpam45amUwdTJjaTllZmo3ZzBpdDh0azRAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ",
+          "https://calendar.google.com/calendar/embed?src=haijn9je0u2ci9efj7g0it8tk4%40group.calendar.google.com&ctz=Europe%2FBrussels",
       },
       {
         source: "/(.*)",
