@@ -62,6 +62,17 @@ module.exports = {
         has: [
           {
             type: "host",
+            value: "zoom.dao.brussels",
+          },
+        ],
+        permanent: false,
+        destination: "https://us02web.zoom.us/j/6025635806",
+      },
+      {
+        source: "/(.*)",
+        has: [
+          {
+            type: "host",
             value: "telegram.dao.brussels",
           },
         ],
