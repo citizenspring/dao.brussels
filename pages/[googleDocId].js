@@ -15,18 +15,28 @@ const defaultValues = sitemap.index;
 export async function getStaticPaths() {
   const paths = [];
   Object.keys(sitemap).forEach((key) => {
+    if (key.match(/^collectives/)) return;
     paths.push({
       params: {
         googleDocId: sitemap[key].googleDocId,
       },
     });
+    if (sitemap[key].aliases) {
+      sitemap[key].aliases.map((alias) => {
+        paths.push({
+          params: {
+            googleDocId: alias,
+          },
+        });
+      });
+    }
     paths.push({
       params: {
         googleDocId: key,
       },
     });
   });
-  console.log(paths);
+  // console.log(paths);
   return {
     paths,
     fallback: true,
@@ -111,11 +121,6 @@ export default function Home({ page }) {
     if (Math.abs(docEl.offsetWidth - currentDocWidth) < 50) {
       return;
     }
-    console.log(
-      "computeOffset",
-      currentDocWidth,
-      Math.abs(docEl.offsetWidth - currentDocWidth)
-    );
     setCurrentDocWidth(Number(docEl.offsetWidth) || 120);
     docEl.querySelectorAll("h1,h2,h3,h4,h5,h6").forEach((el) => {
       const slug = el.getAttribute("id");
