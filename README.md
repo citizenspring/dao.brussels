@@ -4,5 +4,5 @@ It uses [shared google docs](https://drive.google.com/drive/folders/1w-97EnFUvXG
 
 ## About DAO.brussels
 
-DAO.brussels is the genesis DAO for the crypto community in Brussels.
+DAO.brussels is the DAO for the crypto community in Brussels.
 Join us on Discord: https://discord.dao.brussels
