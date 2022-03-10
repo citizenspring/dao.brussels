@@ -9,7 +9,6 @@ module.exports = {
       "lh6.googleusercontent.com",
     ],
   },
-  swcMinify: false,
   async redirects() {
     return [
       {
