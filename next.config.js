@@ -79,6 +79,17 @@ module.exports = {
         permanent: false,
         destination: "https://t.me/joinchat/5NbP0-Vl5Vg3MTgx",
       },
+      {
+        source: "/(.*)",
+        has: [
+          {
+            type: "host",
+            value: "summit.dao.brussels",
+          },
+        ],
+        permanent: false,
+        destination: "https://www.getrevue.co/profile/daosummit",
+      },
     ];
   },
 };
